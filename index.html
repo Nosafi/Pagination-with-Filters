@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Test 1</title>
+  </head>
+  <body>
+    <div style="min-height: 630px;" class="container">
+      <form action="#" style="margin: 20px 0;">
+        <div class="row">
+          <div class="col-3">
+            <div class="form-group">
+              <select class="sale-control form-control">
+                <option selected disabled>Фильтр Скидок</option>
+                <option value="1">Без скидки</option>
+                <option value="2">Скидка по программе</option>
+                <option value="3">Временная скидка</option>
+                <option value="4">Постоянная скидка</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <select class="sale-control-2 form-control">
+                <option selected disabled>Фильтр Цены</option>
+                <option value="150-400">150 - 400</option>
+                <option value="400-500">400 - 500</option>
+                <option value="500-600">500 - 600</option>
+                <option value="600-700">600 - 700</option>
+              </select>
+            </div>
+          </div>
+          <div style="display: flex;" class="col-6">
+            <div>
+              <input
+                class="sale-control-3"
+                type="checkbox"
+                name="option3"
+                value="ch1"
+              />
+              В наличии<br />
+              <input
+                class="sale-control-4"
+                type="checkbox"
+                name="option3"
+                value="ch2"
+              />
+              Отсортировать по цене
+            </div>
+            <input class="sale-control-5" type="button" value="Отфильтровать" />
+          </div>
+        </div>
+      </form>
+
+      <table class="table table-striped product-table" id="paged">
+        <thead>
+          <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Наличие</th>
+            <th scope="col">Скидка</th>
+            <th scope="col">Отделение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <div style="text-align: center;">
+        Страница: <label class="current_page"></label><br />
+        <div class="pagebuttons_wrapper"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
